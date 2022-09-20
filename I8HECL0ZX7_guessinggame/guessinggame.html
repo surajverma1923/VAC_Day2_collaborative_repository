@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Word-Guess-Game</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Londrina+Solid|PT+Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div class="main-container .intro">
+        <h1>Word Guess Game</h1>
+        <div>
+          <h3 class="ptSans">Press the keyboard to<br>guess the letters!</h3>
+          <h3 class="bottom ptSans">
+            Hint: Words are<br>JavaScript<br>primitive datatypes related
+          </h3>
+        </div>
+
+        <p id="guess"></p>
+        <p class="size">
+          Guesses Left: <span id="left" class="sizeNumber ptSans"></span>
+        </p>
+        <p class="size">
+          Wrong Letters: <span id="wrong" class="sizeNumber ptSans"></span>
+        </p>
+        <p class="size">
+          Win: <span id="wins" class="sizeNumber ptSans"></span>Lose:
+          <span id="losses" class="sizeNumber ptSans"></span>
+        </p>
+        <div id="img"></div>
+      </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
