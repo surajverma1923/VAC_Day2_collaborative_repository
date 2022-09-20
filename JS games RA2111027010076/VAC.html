@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="introsection">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand m-2" href="https://guessgame076.ccbp.tech">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png" class="food-munch-logo" style="width:60px; " />
+                </a>
+                <a class="navbar-brand" href="https://jstypespeedtest.ccbp.tech">
+                    <img src="https://res.cloudinary.com/dchbfnlct/image/upload/v1663666551/speed_txxqy9.jpg" class="food-munch-logo" style="height:85px; " />
+                </a>
+                <a class="navbar-brand" href="https://calculator076.ccbp.tech">
+                    <img src="https://res.cloudinary.com/dchbfnlct/image/upload/v1663665983/calc_j5mzsq.png" class="food-munch-logo" style="width:70px; " />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#wcu-section">
+                            Guess-game
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#explore-menu-section" id="navItem2">Typing speed test</a>
+                        <a class="nav-link" href="#dandp-section" id="navItem3">calculator</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid bg-container">
+            <div class="row bg-white">
+                <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
+                    <img class="guess-game-img mt-5" src="" />
+                    <p class="text-center game-description">
+
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 m-5 p-3 text-white">
+                        The above three icons direct you to their specific sites:
+                        </br></br>
+                        ➤ First one is the guessing game where you need to guess a number between 1 to 100.
+                        </br></br>➤ Second is the Speed typing test where you can type a random sentence shown on the screen and check the accuracy and speed of your typing.
+                        </br></br>➤Third is a simple calculator which shows the image of calculator and you can perform the mathematical operations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="numberSection" class="d-none">
+        <div class="name-container text-right d-flex flex-row justify-content-end">
+            <h1 class="name-heading p-3">Swaroop Guessing Game</h1>
+        </div>
+        <div class="container-fluid bg-container">
+            <div class="row bg-white">
+                <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
+                    <img class="guess-game-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png" />
+                    <p class="text-center game-description">
+                        Find out the right number between 1 to 100
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 guess-bg-container text-center">
+                    <h1 class="guess-heading">
+                        Guess The Number
+                        <img class="guess-number-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png" />
+                    </h1>
+                    <input type="text" class="user-input" id="userInput" />
+                    <div>
+                        <button class="btn btn-info check-guess" onclick="checkGuess()">
+                            Check
+                        </button>
+                    </div>
+                    <p class="game-result" id="gameResult"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alphabetSection" class="d-none">
+        <div class="name-container text-right d-flex flex-row justify-content-end">
+            <h1 class="name-heading p-3">Swaroop Guessing Game</h1>
+        </div>
+        <div class="container-fluid bg-container">
+            <div class="row bg-white">
+                <div class="col-12 col-md-6 m-auto bg-white pt-5 pb-5">
+                    <img class="guess-game-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png" />
+                    <p class="text-center game-description">
+                        Find out the right number between 1 to 100
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 guess-bg-container text-center">
+                    <h1 class="guess-heading">
+                        Guess The Alphabet
+                        <img class="guess-number-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png" />
+                    </h1>
+                    <input type="text" class="user-input" id="userInput" />
+                    <div>
+                        <button class="btn btn-info check-guess" onclick="checkGuess()">
+                            Check
+                        </button>
+                    </div>
+                    <p class="game-result" id="gameResult"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
