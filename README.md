@@ -1,2 +1,2 @@
 ## Javascript Projects
-This repository is a collaborative repository created during the second day of VAC web development workshop
+This repository is a collection of javascript based projects created during the second day of VAC web development workshop
